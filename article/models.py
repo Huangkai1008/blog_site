@@ -2,6 +2,8 @@ from datetime import datetime
 
 from django.db import models
 
+__all__ = ['Article']
+
 
 # Create your models here.
 class Article(models.Model):
