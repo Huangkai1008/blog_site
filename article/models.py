@@ -39,7 +39,7 @@ class Article(models.Model):
     博客-文章
     """
     title = models.CharField('文章标题', max_length=100, help_text='文章标题', unique=True)
-    body = models.TextField('文章内容')
+    content = models.TextField('文章内容')
     create_time = models.DateTimeField('发布时间', default=datetime.now)
     update_time = models.DateTimeField('修改时间', auto_now=True)
     category = models.ForeignKey(Category, verbose_name='文章分类', on_delete=models.CASCADE, default='')

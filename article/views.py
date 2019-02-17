@@ -9,7 +9,7 @@ from article.serializers import ArticleSerializer
 
 class ArticleListView(APIView):
     """
-    商品列表
+    文章列表
     """
     def get(self, request):
         articles = Article.objects.all()

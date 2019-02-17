@@ -9,7 +9,7 @@ class ArticleAdmin(admin.ModelAdmin):
     """
     文章admin
     """
-    fields = ('title', 'body', 'create_time', 'category', 'tags')
+    fields = ('title', 'content', 'create_time', 'category', 'tags')
 
 
 @admin.register(Category)
